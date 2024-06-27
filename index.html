@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTE APP</title>
+    <link rel="stylesheet" href="stylr.css">
+</head>
+<body>
+    <main>
+        <h4>TODO App</h4>
+        <div class="add-task" id="add-task">
+            <p>Add New Task</p>
+            <button id="add-btn">+</button>
+        </div>
+        <h5>Tasks</h5>
+
+        <div class="container" id="container">
+            <p class="default">Add your tasks here</p>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="mod-container">
+                <div class="top">
+                    <h3>Add New Task</h3>
+                    <button type="button" id="cancel">*</button>
+                </div>
+    
+                <form id="form">
+                    <label for="title">Task Title</label><br>
+                    <input type="text" id="title">
+                    <p id="error"></p>
+                    <br>
+                    <label for="date">Task Date</label> <br>
+                    <input type="date" name="date" id="date" placeholder="06-02-2024">
+                    <br>
+                    <label for="description">Description</label> <br>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    <br>
+                    <!-- <div class="btns"> -->
+                        <button type="button" id="close">Close</button>
+                        <button id="task-add" type="submit">Add</button>
+                    <!-- </div> -->
+                </form>
+            </div>
+        </div>
+            
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
